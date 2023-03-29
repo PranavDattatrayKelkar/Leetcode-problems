@@ -17,7 +17,7 @@ public class AddTwoNumbers {
      * @param l2 :Input listNode 2
      * @return final linked containing the sum of the two input linked lists
      */
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+    public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         int carry = 0;
         int sum = 0;
         ListNode finalList = new ListNode();
