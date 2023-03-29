@@ -26,13 +26,17 @@ public class TwoSum {
                     finalArray[0] = i-1;
                     finalArray[1] = temp;
                     return finalArray;
+
                 }
                 temp++;
+
             }
             curr = target - nums[i];
             i++;
+
         }
         return finalArray;
+
     }
 
 }
