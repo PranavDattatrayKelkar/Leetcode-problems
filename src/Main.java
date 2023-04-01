@@ -1,12 +1,5 @@
-import Easy.TwoSum;
-import Medium.AddTwoNumbers;
-import Medium.MinimumWindowSubstring;
+import Hard.MinimumWindowSubstring;
 
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.Map;
-
-import static helper.LeetCodeHelper.ListNode;
 public class Main {
     public static void main(String[] args)
     {
@@ -46,7 +39,7 @@ public class Main {
         */
 
         /**
-         * 3. Length Of LongestSubstring
+         * 76. Minimum window substring
          *
          * This solution is exceeding timelimit in leetcode but is easier to understand in the next commit I will update
          * the solution using hashing
