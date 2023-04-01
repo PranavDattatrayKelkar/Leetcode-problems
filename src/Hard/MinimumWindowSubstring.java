@@ -2,8 +2,19 @@ package Hard;
 
 import java.util.HashMap;
 
+/**
+ * This class solves Minimum Window Substring problem
+ *
+ */
 public class MinimumWindowSubstring {
 
+    /**
+     * This method mathes and returns minimum substring as that of the parent string
+     *
+     * @param actualString
+     * @param targetString
+     * @return minimum matching substring from the parent string
+     */
     public static String getMininmumWindoSubstring(String actualString, String targetString) {
         int globalCount = 0;
         if(actualString.length() == targetString.length())
