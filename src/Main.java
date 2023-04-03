@@ -1,3 +1,4 @@
+import Easy.ValidParentheses;
 import Hard.MinimumWindowSubstring;
 import Easy.PalindromeNumber;
 
@@ -58,9 +59,27 @@ public class Main {
          * 9. Palindrome Number
          *
          */
+        /*
         int x = 1;
         Boolean bool = PalindromeNumber.palindromeNumberCheck(x);
         System.out.println(bool);
+         */
+
+        /**
+         * 20. Valid Parentheses
+         *
+         */
+        String s = "()";
+        Boolean checker = ValidParentheses.checkValidParantheses(s);
+        System.out.println(checker);
+
+        /**
+         * Container with most water
+         *
+         */
+        int[] height = {1,8,6,2,5,4,8,3,7};
+
 
     }
+
 }

@@ -5,6 +5,7 @@ package Easy;
  *
  */
 public class TwoSum {
+
     /**
      * Two sum helper function takes in the input array and the target value
      *
