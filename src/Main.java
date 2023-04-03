@@ -1,7 +1,12 @@
+import Easy.MergeTwoSortedLists;
 import Easy.ValidParentheses;
 import Hard.MinimumWindowSubstring;
 import Easy.PalindromeNumber;
 import Easy.LongestCommonPrefix;
+import helper.LeetCodeHelper;
+
+import java.util.Arrays;
+import java.util.Iterator;
 
 public class Main {
     public static void main(String[] args)
@@ -72,12 +77,41 @@ public class Main {
          *
          *
          **/
+        /*
         String[] strs1 = {"aaa","aa","aaa"};
         String[] strs2 = {"dog","racecar","car"};
         String commonPrefix = LongestCommonPrefix.longestCommonPrefix(strs1);
         System.out.println(commonPrefix);
+        */
 
+        /**
+         * 21. Merge Two Sorted Lists
+         */
+        /*
+        int[] l1 = {1,2,4};
+        int[] l2 = {1,3,4};
+        Iterator it1 = Arrays.stream(l1).iterator();
+        Iterator it2 = Arrays.stream(l2).iterator();
+        LeetCodeHelper.ListNode ll1 = new LeetCodeHelper.ListNode();
+        LeetCodeHelper.ListNode ll1Head = ll1;
+        LeetCodeHelper.ListNode ll2 = new LeetCodeHelper.ListNode();
+        LeetCodeHelper.ListNode ll2Head = ll2;
+        while(it1.hasNext())
+        {
+            int val = (int) it1.next();
+            ll1.next = new LeetCodeHelper.ListNode(val);
+            ll1 = ll1.next;
 
+        }
+        while(it2.hasNext())
+        {
+            int val = (int) it2.next();
+            ll2.next = new LeetCodeHelper.ListNode(val);
+            ll2 = ll2.next;
+
+        }
+        LeetCodeHelper.ListNode finalList = MergeTwoSortedLists.mergeTwoLists(ll1Head.next, ll2Head.next);
+        */
     }
 
 }
