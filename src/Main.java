@@ -1,4 +1,5 @@
 import Hard.MinimumWindowSubstring;
+import Easy.PalindromeNumber;
 
 public class Main {
     public static void main(String[] args)
@@ -44,13 +45,22 @@ public class Main {
          * This solution is exceeding timelimit in leetcode but is easier to understand in the next commit I will update
          * the solution using hashing
          */
+        /*
         String originalString = "bdeacb";
         String targetString = "ab";
         String origninalString1 = "ADOBECODEBANC";
         String targetString1 = "ABC";
         String mininmumWindoSubstring = MinimumWindowSubstring.getMininmumWindoSubstring(origninalString1, targetString1);
         System.out.println(mininmumWindoSubstring);
+        */
 
+        /**
+         * 9. Palindrome Number
+         *
+         */
+        int x = 1;
+        Boolean bool = PalindromeNumber.palindromeNumberCheck(x);
+        System.out.println(bool);
 
     }
 }
