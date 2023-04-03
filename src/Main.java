@@ -1,6 +1,7 @@
 import Easy.ValidParentheses;
 import Hard.MinimumWindowSubstring;
 import Easy.PalindromeNumber;
+import Easy.LongestCommonPrefix;
 
 public class Main {
     public static void main(String[] args)
@@ -65,19 +66,16 @@ public class Main {
         System.out.println(bool);
          */
 
-        /**
-         * 20. Valid Parentheses
-         *
-         */
-        String s = "()";
-        Boolean checker = ValidParentheses.checkValidParantheses(s);
-        System.out.println(checker);
 
         /**
-         * Container with most water
+         * 14. Longest Common Prefix
          *
-         */
-        int[] height = {1,8,6,2,5,4,8,3,7};
+         *
+         **/
+        String[] strs1 = {"flower","flow","flight"};
+        String[] strs2 = {"dog","racecar","car"};
+        String commonPrefix = LongestCommonPrefix.longestCommonPrefix(strs1);
+        System.out.println(commonPrefix);
 
 
     }
