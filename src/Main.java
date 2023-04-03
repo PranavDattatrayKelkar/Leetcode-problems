@@ -72,7 +72,7 @@ public class Main {
          *
          *
          **/
-        String[] strs1 = {"flower","flow","flight"};
+        String[] strs1 = {"aaa","aa","aaa"};
         String[] strs2 = {"dog","racecar","car"};
         String commonPrefix = LongestCommonPrefix.longestCommonPrefix(strs1);
         System.out.println(commonPrefix);
