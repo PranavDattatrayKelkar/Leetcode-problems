@@ -1,5 +1,7 @@
 package Easy;
 
+import java.util.HashMap;
+
 /**
  * This class solves two sum problem
  *
@@ -16,27 +18,23 @@ public class TwoSum {
     public static int[] twoSum(int[] nums, int target) {
         int[] finalArray = new int[2];
         int curr = target - nums[0];
-        int i = 1;
-        while(i < nums.length)
+
+
+        HashMap<Integer, Integer> sets = new HashMap<Integer, Integer>() ;
+        for(int i = 0; i < nums.length; i++)
         {
-            int temp = i;
-            while(temp < nums.length)
-            {
-                if(curr == nums[temp])
-                {
-                    finalArray[0] = i-1;
-                    finalArray[1] = temp;
-                    return finalArray;
-
-                }
-                temp++;
-
-            }
-            curr = target - nums[i];
-            i++;
-
+            sets.put(nums[i],i);
         }
-        return finalArray;
+
+        for(int i = 1; i < nums.length; i++)
+        {
+            int complement = target - nums[i];
+            if(sets.containsKey(target - complement) && sets.get(complement) != i) {
+                return new int[]{i, sets.get(complement)};
+            }
+        }
+
+        return null;
 
     }
 

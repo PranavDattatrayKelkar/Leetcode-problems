@@ -5,12 +5,14 @@ import Easy.PalindromeNumber;
 import Easy.LongestCommonPrefix;
 import helper.LeetCodeHelper;
 
-import java.util.Arrays;
-import java.util.Iterator;
+import java.util.*;
+
+import static Easy.FindTheIndexOfTheFirstOccurenceInAString.returnFirstOccurenceIndex;
+import static Easy.movingInAdirection.removeUnnecessaryMovements;
+import static Medium.minNumOfUniqueIdAfterRemovingMItems.minNumOfUniqueIdAfterRemovingMItems;
 
 public class Main {
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         /**
          * 1. Two sum
          */
@@ -112,6 +114,46 @@ public class Main {
         }
         LeetCodeHelper.ListNode finalList = MergeTwoSortedLists.mergeTwoLists(ll1Head.next, ll2Head.next);
         */
-    }
 
+        /**
+         * 28. Find the Index of the First Occurence in a String
+         *
+         */
+        /*
+         String haystack = "sadbutsad";
+         String needle = "sad";
+         Integer index = returnFirstOccurenceIndex(haystack, needle);
+         */
+
+        /**
+         * https://leetcode.com/discuss/interview-question/916920/Expedia-OA
+         *
+         */
+        /*
+        int[] arr = {4, 1, 4, 4, 5};
+        int m = 2;
+        int minLength = minNumOfUniqueIdAfterRemovingMItems(arr, m);
+        System.out.println(minLength);
+        */
+
+        /**
+         * Remove unnecessary movements
+         *
+         */
+        /*
+        String path1 = "UUDD";
+        String path2 = "URDR";
+
+        int numOfUnnecessaryMovements = removeUnnecessaryMovements(path1);
+        System.out.println(numOfUnnecessaryMovements);
+         */
+
+        /**
+         * Pairs of Songs With Total Durations Divisible by 60
+         *
+         */
+
+
+
+    }
 }
