@@ -1,15 +1,4 @@
-import Easy.MergeTwoSortedLists;
-import Easy.ValidParentheses;
-import Hard.MinimumWindowSubstring;
-import Easy.PalindromeNumber;
-import Easy.LongestCommonPrefix;
-import helper.LeetCodeHelper;
-
-import java.util.*;
-
-import static Easy.FindTheIndexOfTheFirstOccurenceInAString.returnFirstOccurenceIndex;
-import static Easy.movingInAdirection.removeUnnecessaryMovements;
-import static Medium.minNumOfUniqueIdAfterRemovingMItems.minNumOfUniqueIdAfterRemovingMItems;
+import Easy.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -149,9 +138,62 @@ public class Main {
          */
 
         /**
-         * Pairs of Songs With Total Durations Divisible by 60
+         * Number of Islands
          *
          */
+        /*
+        char[][] board = {{'X','X','X','X'},{'X','O','O','X'},{'X','X','O','X'},{'X','O','X','X'}};
+        int num_islands = solveSurroundRegions(board);
+        System.out.println("Number of islands" + num_islands);
+        */
+
+        /**
+         * Longest Ordered Subsequence of Vowels
+         *
+         */
+        /*
+        int[] input = {4,5,1,2,3,4};
+        int m = 5;
+        int finalVal = minProblems(input, m);
+        System.out.println(finalVal);
+        */
+
+        /*
+        List<String> list = Arrays.asList(new String[]{"ab", "cd"});
+        int m = 3;
+        String result = isEven(list, m);
+        System.out.println(result);
+       */
+
+        /**
+         * Longest Substring Without Repeating Characters
+         *
+         */
+        //String s = "dvdf";
+        //int length = LongestStringWithoutRepeatingCharacters.lengthOfLongestSubstring(s);
+        //System.out.println(length);
+
+        /**
+         *
+         * Find the distinct difference Array
+         */
+        /*
+         ArrayList<Integer> nums = new ArrayList<>();
+         nums.add(4);
+         nums.add(4);
+         nums.add(1);
+         nums.add(3);
+
+         int finalNums = CandleCount.candleCountTallestCandle(nums);
+        */
+
+         int[] nums = {4, 10, 8, 6, 9};
+
+         boolean isDiffByOne = ElementDiffer.atleastOnePairDifferByOne(nums);
+
+         System.out.println(isDiffByOne);
+
+
 
 
 

@@ -6,6 +6,7 @@ public class minNumOfUniqueIdAfterRemovingMItems {
 
     public static int minNumOfUniqueIdAfterRemovingMItems(int[] arr, int m)
     {
+
         HashMap<Integer, Integer> freqMap = new HashMap<Integer, Integer>();
         for(Integer ints: arr)
         {
@@ -50,6 +51,7 @@ public class minNumOfUniqueIdAfterRemovingMItems {
         // Create a list from elements of HashMap
         List<Map.Entry<Integer, Integer> > list =
                 new LinkedList<Map.Entry<Integer, Integer> >(hm.entrySet());
+
 
         // Sort the list
         Collections.sort(list, new Comparator<Map.Entry<Integer, Integer> >() {

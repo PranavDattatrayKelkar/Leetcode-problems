@@ -9,7 +9,7 @@ import java.util.HashMap;
 public class MinimumWindowSubstring {
 
     /**
-     * This method mathes and returns minimum substring as that of the parent string
+     * This method matches and returns minimum substring as that of the parent string
      *
      * @param actualString
      * @param targetString
